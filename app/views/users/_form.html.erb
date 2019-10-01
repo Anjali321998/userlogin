@@ -11,7 +11,7 @@
       </ul>
     </div>
 <% end %>
-<%= form_with scope: :user, local: true do |form|%>
+<%= form_for @user do |form|%>
 	<p>
 		First Name : <%= form.text_field :fname %>
 	</p>
