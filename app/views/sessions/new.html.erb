@@ -1,0 +1,12 @@
+<h1> Login</h1>
+<%= form_tag '/login', local: true do |form| %>
+	<p>
+		Email : <%= form.email_field :email %>
+	</p>
+	<p>
+		Password <%= form.password_field :password_digest%>
+	</p>
+	<p>
+		<%= form.submit "Login" %>
+	</p>	
+<% end %>
