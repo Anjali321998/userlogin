@@ -1,0 +1,12 @@
+<h1>User Info</h1>
+<p>
+	First Name: <%= @user.fname %>
+</p>
+<p>
+	Last Name : <%= @user.lname%>
+</p>
+<p>
+	Email : <%= @user.email%>
+</p>
+<%= link_to 'Logout', logout_path%>
+<%= link_to 'Edit', edit_user_path(@user) %>

@@ -13,6 +13,12 @@ class UsersController < ApplicationController
 			render 'new'
 		end 
 	end
+	def show
+		@user = User.find(params[:id])
+	end
+	def edit
+		@user = User.find(user_params)
+	end
 	private
 	def user_params
 		params.require(:user).permit(:fname,:lname,:email,:password_digest)
